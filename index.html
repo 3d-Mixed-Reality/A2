@@ -20,6 +20,8 @@
         <option value="desktop-2">My mode (L=translate, R=rotate)</option>
         <option value="desktop-1">Professor — baseline (mode-switched)</option>
         <option value="vr-grab">VR — direct grab</option>
+        <option value="vr-trackball">VR — trackball (rotacao indireta)</option>
+        <option value="vr-gizmo">VR — gizmo (setas/aneis por eixo)</option>
       </select>
     </label>
     <label>VR exp
@@ -39,8 +41,11 @@
   <div id="help">
     Confirm logs your current error and starts the next trial — it does not
     require being in tolerance first. The status pill turns green as a hint,
-    not a gate. Desktop: Enter or the Confirm button. VR: trigger on the LEFT
-    controller confirms.
+    not a gate. Desktop: Enter or the Confirm button. VR: pick the mode here,
+    then "Enter VR". RIGHT trigger manipulates (grab: point at the cube;
+    trackball: point at the cube to move, at nothing to rotate; gizmo: point
+    at an arrow/ring). LEFT trigger confirms. The target glows green when in
+    tolerance.
   </div>
 
   <script type="importmap">
