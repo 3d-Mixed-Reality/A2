@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MAC0623 — A1 Desktop Docking Testbed (Starter)</title>
+  <title>MAC0623 — A2 Docking Testbed (Desktop + VR)</title>
   <link rel="stylesheet" href="./a1.css" />
 </head>
 <body>
@@ -15,10 +15,19 @@
        ============================================================ -->
   <div id="hud">
     <label>Participant <input id="participantId" value="P01" size="4" /></label>
-    <label>Mapping
+    <label>Mode
       <select id="mappingSelect">
-        <option value="1">1 — baseline (mode-switched)</option>
-        <option value="2">2 — your own</option>
+        <option value="desktop-2">My mode (L=translate, R=rotate)</option>
+        <option value="desktop-1">Professor — baseline (mode-switched)</option>
+        <option value="vr-grab">VR — direct grab</option>
+      </select>
+    </label>
+    <label>VR exp
+      <select id="vrExperience">
+        <option value="">—</option>
+        <option value="none">none</option>
+        <option value="some">some</option>
+        <option value="lots">lots</option>
       </select>
     </label>
     <span id="trialCount">Trial 1</span>
@@ -30,7 +39,8 @@
   <div id="help">
     Confirm logs your current error and starts the next trial — it does not
     require being in tolerance first. The status pill turns green as a hint,
-    not a gate. See README.md and the STUDENT TODO comments in main.js.
+    not a gate. Desktop: Enter or the Confirm button. VR: trigger on the LEFT
+    controller confirms.
   </div>
 
   <script type="importmap">
